@@ -22,10 +22,16 @@ stages:
 
     steps:
     - task: Maven@3
+      displayName: 'Maven Test'
+      inputs:
+        goals: 'test'
+        mavenPomFile: 'pom.xml'
+    - task: Maven@3
       displayName: 'Maven Package'
       inputs:
+        goals: 'package'
         mavenPomFile: 'pom.xml'
-
+        
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
       inputs:
