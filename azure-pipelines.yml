@@ -3,7 +3,7 @@ trigger:
 
 variables:
 
-  azureSubscription: '380803b3-944e-4da4-b35c-371165811d34'
+  azureSubscription: 'fd3513f7-221b-423a-9de3-5f118cb683e3'
 
   webAppName: 'mynewwebapp34w'
 
